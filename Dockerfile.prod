@@ -4,4 +4,4 @@ COPY . .
 RUN CGO_ENABLED=0 go build -o /app main.go
 FROM scratch
 COPY --from=builder /app /app
-CMD [ "/app" ]https://hub.docker.com/repository/docker/supermoykadev/codeeducation
+CMD [ "/app" ]
